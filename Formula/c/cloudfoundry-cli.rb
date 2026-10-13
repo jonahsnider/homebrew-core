@@ -25,6 +25,7 @@ class CloudfoundryCli < Formula
   depends_on "go@1.26" => :build
 
   conflicts_with "cf", because: "both install `cf` binaries"
+  conflicts_with "cloudflare-cli", because: "both install `cf` binaries"
 
   deny_network_access!
 
